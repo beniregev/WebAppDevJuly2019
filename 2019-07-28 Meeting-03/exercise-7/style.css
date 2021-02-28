@@ -1,0 +1,16 @@
+a:hover{
+	color: green;
+	text-decoration: none;
+}
+td:first-child {
+	height: 50px;
+}
+td:last-child {
+	/* 
+	I am color-blind, I can barely see the text 
+	when using green background and black text so, 
+	I am using "Medium Spring Green", it looks like 
+	greenish to me and I see the text clearly 
+	*/
+	background-color: MediumSpringGreen;
+}

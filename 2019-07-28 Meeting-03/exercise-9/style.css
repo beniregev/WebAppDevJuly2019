@@ -1,0 +1,11 @@
+#hdr-shopping {
+	border: 5px dashed blue;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-bottom: 50px;
+	margin-left: 40px;
+}
+#lst-shopping {
+	direction: rtl;
+	text-align: right;
+}

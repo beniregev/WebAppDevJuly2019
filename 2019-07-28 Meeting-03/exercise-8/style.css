@@ -1,0 +1,11 @@
+.lnk-large[href="http://en.wikipedia.org/wiki/Dairy_product"] {
+	letter-spacing: 20px;
+}
+.lnk-large[href="http://market.zap.co.il/default.aspx?siteid=2"] {
+	/* work=spacing can't be with percentage (%) only in pixels */
+	word-spacing: 100px;
+}
+.marked {
+	direction: rtl;
+	text-align: right;
+}

@@ -1,0 +1,26 @@
+/*
+ * Author: Binyamin (Benny) Regev
+ * e-mail: beniregev@gmail.com
+ */
+body {
+	background-color: MediumSpringGreen;
+}
+a[href*="market.zap.co.il"], #shopping-list > li:first-child {
+	font-size:150%;
+}
+#shopping-list > li:first-child {
+	text-decoration: underline;
+}
+li.marked {
+	text-decoration: line-through;
+}
+#shopping-list {
+	/*
+	Using border style shorthand for: 
+	
+	border-width: 5px;
+	border-style: dotted;
+	border-color: white;
+	 */
+	border: 5px dotted white;
+}
