@@ -1,0 +1,30 @@
+/* style.css here */
+
+div.row > div > button {
+  visibility: hidden;
+}
+
+div.row:hover > div > span {
+  background-color: lightskyblue;
+}
+
+div.row:hover > div > .btn-danger {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked{
+  text-decoration: line-through;
+}
+label .form-check-label{
+  text-decoration-style: inherit;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
