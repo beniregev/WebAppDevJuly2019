@@ -1,0 +1,171 @@
+<html>
+<!-- 
+	Use 10 tags for different elements and 
+	for each	element 2 attributes
+-->
+<head>
+	<!-- 1. <title> = page title in the browser's tab	-->
+	<title>Benny's page</title>
+
+	<!-- 2. <lilnk>	-->
+	<link rel="icon" href="favicon.ico" />
+	
+	<!-- 3. <meta>	page metadata	-->
+	<!-- Adding metadata to my page -->
+	<meta charset="UTF-8">
+	<meta name="description" content="My Exercise 6 HTML page">
+	<meta name="keywords" content="HTML,element,tag,title,paragraph,meta">
+	<meta name="author" content="Binyamin Regev">
+	<meta name="e-mail" content="beniregev@gmail.com">
+
+	<!-- 4. <style> style-sheet	-->
+	<!-- define style for element "span" and class "red-font" -->
+	<style>
+		span {
+			color: blue;
+		}
+		.red-font {
+			color: red;
+		}
+	</style>
+
+	<!-- 5. <h1> <h2>	headlines -->
+	<!-- Headers -->
+	<h1 class="red-font" id="11">
+	This is not my 2nd <span>HTML</span> page
+	</h1>
+	<h2 class="sub-title" id="12">
+	(Previous one was the solution 4 <span>Exercise 5<span>)
+	</h2>
+	<!-- 6. <bdi> = Bi-Directional Isolation	-->
+	<!-- 
+	Showing Hebrew text mixed with English and digits 
+	from Right-To-Left 
+	-->
+	<bdi class="hebrew-title" id="14">
+		<h1>שלום קורס פיתוח אפליקציות WEB יולי 2019</h1>
+	</bdi>
+</head>
+
+<body>
+	<!-- 7. link to internal section within this webpage -->
+	<a href="#footer">Jump to Bottom</a>
+	<!-- 8. <p> Paragraph -->
+	<p>
+	<!-- 9. <img> image -->
+	<img 
+	src="https://bit.ly/fcc-relaxing-cat" 
+	alt="Image of relaxing cat is not showing"
+	/>
+	</p>
+	
+	<!-- 10. <a> Hyperlink - External link -->
+	<a rel="External link" target="_blank" 
+	href="https://www.linkedin.com/in/binyamin-r-858608b6/">
+	Visit My LinkedIn Page
+	</a>
+	
+	<form>
+		<!-- 11. <form> <input>	CheckBox(es) -->
+		<h3>Show/Hide details: </h3>
+		<label for="show-languages">
+			<input id="show-languages" 
+					type="checkbox" 
+					name="show-details" 
+					checked>
+			Show languages
+		</label><br />
+		<label for="show-skills">
+			<input id="show-skills" 
+					type="checkbox" 
+					name="show-details" 
+					checked>
+			Show Skills
+		</label>
+	</form>
+	<!-- 12. <table> <thead> <tbody> <tr> <th> <td> -->
+	<!-- bgcolor attribute = set the background color for the entire table, unless overriden in <tr> and/or <td> -->
+	<table border="1" id="languages" bgcolor="#ffff00">
+		<h3>Spoken Languages</h3>
+		<thead>
+			<!-- overriding table's backgroud-color only for this row -->
+			<tr bgcolor="lightgray">
+				<th style="padding:10px">Language</th>
+				<th style="padding:10px">Reading </th>
+				<th style="padding:10px">Writing </th>
+				<th style="padding:10px">Speaking</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- 
+			color attribute = set text-color for this table row, 
+			overriding table's backgroud-color only for this row.
+			-->
+			<tr>
+				<td style="padding:10px"><b>Hebrew</b></td>
+				<td style="padding:10px">Native</td>
+				<td style="padding:10px">Native</td>
+				<td style="padding:10px">Native</td>
+			</tr>
+			<!-- bgcolor attribute = set backgroud-color for this table row, overiding table's background-color -->
+			<tr bgcolor="#a0a000">
+				<td style="padding:10px"><b>English</b></td>
+				<td style="padding:10px">Fluent</td>
+				<td style="padding:10px">Fluent</td>
+				<td style="padding:10px">Fluent</td>
+			</tr>
+			<tr>
+				<td style="padding:10px"><b>Russian</b></td>
+				<td style="padding:10px">Beginner</td>
+				<td style="padding:10px">Medium</td>
+				<td style="padding:10px">Beginner</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 13. <ul> = Unordered List ; <li> = List Item -->
+	<ul id=skills><h3>Skills</h3>
+		<li>Programming Languages: Java, PL/SQL, T-SQL.</li>
+		<li>Spring framework (Spring MVC, Spring IOC, Spring Data, Spring LDAP, Spring Security), Hibernate ORM.</li>
+		<li>Application Server: Apache Tomcat, WebLogic.</li>
+		<li>Databases: Oracle, PostgreSQL, MySQL.</li>
+		<li>Version Control: GIT, ClearCase.</li>
+		<li>Tools: AGM, BitBuket, JIRA, Trelo.</li>
+		<li>RAD (4GL): PowerBuilder, Paradox, Delphi.</li>
+	</ul>
+	
+	<!-- 14. <form> <input>	= RadioButton(s) -->
+	<form action="user-details">
+		<h3>What to enter?</h3>
+		<p>
+		<label for="usernameOnly">
+			<input id="usernameOnly" 
+					type="radio" 
+					name="username-password"
+					checked>
+			Enter Username Only
+		</label><br />
+		<label for="usernameAndPassword">
+			<input id="usernameAndPassword" 
+					type="radio" 
+					name="username-password">
+			Enter Username and Password
+		</label>
+		</p>
+		<p>
+			<!-- 15. <input type="text"> = text field -->
+			<input type="text" placeholder="Enter Username" 
+			required>
+			<input type="text" placeholder="Enter Password">
+		</p>
+		<p>
+			<!-- 16. <button type="submit">	-->
+			<button type="submit">Submit</button>
+		</p>
+	</form>
+</body>
+
+<footer id="footer">
+	<h6>copyrights © 2019, all rights reserved</h6>
+</footer>
+
+</html>
