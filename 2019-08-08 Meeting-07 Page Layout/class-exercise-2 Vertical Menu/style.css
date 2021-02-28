@@ -1,0 +1,30 @@
+body {
+  font-family: Arial;
+}
+
+nav {
+  background-color: #DDD;
+  width: 200px;
+}
+
+nav > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  display: block;
+}
+
+nav > ul > li > a:hover {
+  background-color: #666;
+  color: white;
+}
+
+nav > ul > li.active > a {
+  background-color: lightseagreen;
+  color: white;
+}

@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  /*font-family: Arial;*/
+}
+
+#h1-title {
+  font-family: Tahoma;
+  font-size: 48px;
+}
+
+nav {
+  background-color: blue;
+  color: yellow;
+  width: 15%;
+  padding: 0 20px;
+}
+
+main {
+  width: 75%;
+  margin: 20px;
+  padding: 5px;
+}
+
+nav > ul {
+  list-style: none;
+  padding-right: 0;
+  margin: 0;
+}
+
+nav > ul > .dropdown > a,  .dropdown-content > a, .dropdown-content > a.active {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  font-family: "Arial";
+}
+
+nav > ul > .dropdown > a,  .dropdown-content > a {
+  background-color: blue;
+  color: yellow;
+}
+
+nav > ul > .dropdown > a {
+  font-size: 14px;
+}
+
+.dropdown-content > a, .dropdown-content > a.active {
+  font-size: 12px;
+}
+
+nav > ul > li > a:hover,  .dropdown-content > a:hover, .dropdown:hover > a  {
+  background-color: cyan;
+  color: blue;
+}
+
+nav > ul > li.active > a, .dropdown-content > a.active {
+  background-color: lightblue;
+  color: blue;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav, main {
+  float: right;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 120px;
+  margin-top: 5px;
+  box-shadow: -10px 10px 8px 5px rgba(0,0,0,0.5);
+
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+.dropdown > a > .span-dropdown {
+  float: left;
+  font-size: 2em;
+  transform: rotate(180deg)
+}

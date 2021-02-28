@@ -1,0 +1,46 @@
+#page-body {
+    direction: rtl;
+    text-align: right;
+    font-family: Arial;
+}
+
+#header-h1 {
+    position: fixed;
+    font-family: "Tahoma";
+    font-size: 48px;
+}
+
+nav {
+    top: 50px;
+    background-color: #DDD;
+    width: 200px;
+    border: 2px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav>ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    font-family: "Tahoma";
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+nav>ul>li>a:hover {
+    background-color: #666;
+    color: white;
+}
+
+nav>ul>li.active>a {
+    background-color: lightseagreen;
+    color: white;
+}

@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: "Dosis-Regular";
+    src: url("fonts/Dosis-Regular.ttf");
+}
+
+
+h1 {
+    font-family: "Dosis-Regular";
+}
