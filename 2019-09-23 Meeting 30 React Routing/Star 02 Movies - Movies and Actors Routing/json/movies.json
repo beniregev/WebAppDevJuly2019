@@ -1,0 +1,103 @@
+{
+    "movies": [
+        {
+            "id": 6341,
+            "title": "Blue Thunder",
+            "runtime": 109,
+            "director": "John Badham",
+            "poster_path": "/knmliKe3B82juirhr0dArhy6cd7.jpg",
+            "imdbUrl": "tt0085255",
+            "mainStars": [ "Roy Scheider", "Warren Oates", "Candy Clark", "Daniel Stern", "Paul Roebling" ]
+        }
+        ,{
+            "id": 581797,
+            "title": "WarGames",
+            "runtime": 114,
+            "director": "John Badham",
+            "poster_path": "/rQocmooj7bFKS2vZfzWBB5O12eR.jpg",
+            "imdbUrl": "tt0086567",
+            "mainStars": [  ]
+        }
+        ,{
+            "id": 10724,
+            "title": "Fire Fox",
+            "runtime": 136,
+            "director": "Clint Eastwood",
+            "poster_path": "/1QK1xhmvnLLZhDC8DNaFt08psp9.jpg",
+            "imdbUrl": "tt0083943",
+            "mainStars": [ "Clint Eastwood", "Freddie Jones", "David Huffman", "Warren Clarke", "Ronald Lacey" ]
+        }
+        ,{
+            "id": 11614,
+            "title": "Bomber",
+            "runtime": 101,
+            "director": "Michele Lupo",
+            "poster_path": "/2BNrr3ivgkGeDjPRcXnk29qpRn5.jpg",
+            "imdbUrl": "tt0083675",
+            "mainStars": [ "Bud Spencer", "Jerry Calà", "Stefano Mingardo", "Kallie Knoetze", "Gegia" ]
+        }
+        ,{
+            "id": 10015,
+            "title": "HeartBreak Ridge",
+            "runtime": 130,
+            "director": "Clint Eastwood",
+            "poster_path": "/hbKkfRpjtoCYabxEmhklM6MhF7g.jpg",
+            "imdbUrl": "tt0091187",
+            "mainStars": [ "Clint Eastwood", "Marsha Mason", "Everett McGill", "Moses Gunn", "Mario Van Peebles", "Eileen Heckart", "Peter Koch" ]
+        }
+        ,{
+            "id": 9570,
+            "title": "The Black Hole",
+            "runtime": 98,
+            "director": "Gary Nelson",
+            "poster_path": "/20IPuZOXNRZJBN0loUYClFR8cpx.jpg",
+            "imdbUrl": "tt0078869",
+            "mainStars": [ "Maximilian Schell", "Anthony Perkins", "Robert Forster", "Joseph Bottoms", "Yvette Mimieux", "Ernest Borgnine" ]
+        }
+        ,{
+            "id": 1941,
+            "title": "Exodus",
+            "runtime": 208,
+            "director": "Otto Preminger",
+            "poster_path": "/lwyu4Bz5TXBplnfeFPJW5aGjFiE.jpg",
+            "imdbUrl": "tt0053804",
+            "mainStars": [ "Paul Newman", "Eva Marie Saint", "Ralph Richardson", "Peter Lawford", "Lee J. Cobb", "Jill Haworth", "Alexandra Stewart", "Martin Benson", "Shmuel Segal" ]
+        }
+        ,{
+            "id": 9394,
+            "title": "They Call Me Trinity",
+            "runtime": 106,
+            "director": "Enzo Barboni",
+            "poster_path": "/5b38dfzKqUmTY2HRYrdKJ8vFWAR.jpg",
+            "imdbUrl": "tt0067355",
+            "mainStars": [ "Terence Hill","Bud Spencer","Steffen Zacharias","Dan Sturkie","Gisela Hahn","Elena Pedemonte" ]
+        }
+        ,{
+            "id": 984,
+            "title": "Dirty Harry",
+            "runtime": 102,
+            "director": "Don Siegel",
+            "poster_path": "/4j2tBAusIVev4ZaScncIHknP7eV.jpg",
+            "imdbUrl": "tt0066999",
+            "mainStars": [ "Clint Eastwood","Harry Guardino","Reni Santoni","John Vernon","Mae Mercer" ]
+        }
+        ,{
+            "id": 9386,
+            "title": "In the Line of Fire",
+            "runtime": 128,
+            "director": "Wolfgang Petersen",
+            "poster_path": "/bmeD5LdQiRaZmVHbySXw6WJgAVA.jpg",
+            "imdbUrl": "tt0107206",
+            "mainStars": [ "Clint Eastwood","Rene Russo","John Malkovich","Dylan McDermott","Gary Cole","Fred Dalton Thompson","Sally Hughes","Elsa Raven" ]
+        }
+        ,{
+            "id": 33,
+            "title": "Unforgiven",
+            "runtime": 131,
+            "director": "Clint Eastwood",
+            "poster_path": "/km6qw4qUkHQRN5y2U1juM1WkBFh.jpg",
+            "imdbUrl": "tt0105695",
+            "mainStars": [ "Clint Eastwood","Gene Hackman","Morgan Freeman","Richard Harris","Anna Levine","Frances Fisher","David Mucci","Beverley Elliott","Tara Frederick" ]
+        }
+    ]
+}

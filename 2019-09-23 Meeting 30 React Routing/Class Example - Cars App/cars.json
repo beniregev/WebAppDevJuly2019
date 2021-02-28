@@ -1,0 +1,6 @@
+[
+    { "id": 120, "brand": "Toyota", "model": "Corola", "year": 2010, "km": 150000 },
+    { "id": 121, "brand": "Honda", "model": "Civic", "year": 2002, "km": 250000 },
+    { "id": 122, "brand": "Seat", "model": "Ibiza", "year": 2010, "km": 50000 }
+  ]
+  

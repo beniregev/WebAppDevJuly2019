@@ -1,0 +1,61 @@
+/* styles.css - styles go here */
+
+#movie-details {
+    padding: 10px;
+    margin: 10px;
+}
+
+#actor-credits-album {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actor-credit-card {
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 2px 10px;
+}
+
+.container .btn {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px 10px;
+}
+
+tr td a img {
+    height: 75px;
+}
+
+.row .col a img {
+    height: 300px;
+}
+.row .col p span,
+.row .col-9 p span {
+    font-weight: bold;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-results {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+code {
+    background-color: #c8c8c8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
