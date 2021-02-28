@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="course" content="Web App Dev - July 2019">
+    <meta name="meeting" content="15 - jQuery">
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <title>Bootstrap + jQuery + AJAX Summary Exercise</title>
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap: jQuery library -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap: Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap: Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Google Font - Beth Ellen-->
+    <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <!-- local CSS and JavaScript links -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="h1-title">Bootstrap Summary Exercise</h1>
+    <h4 class="h4-title">Jumbotron, Grid System, Cards, Navbar, Modal Login &amp; Responsive</h4>
+
+    <!-- 
+        Bootstrap Navigation Bar (Navbar) 
+        Colored Navbar with Brand/Logo 
+      -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- 
+            Will create humburger menu 
+            button when width get narrow 
+          -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 
+            Open div, everythign inside it will be included 
+            in the collapse menu under the Hamburger button 
+          -->
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img id="brand-logo" src="images/flag- Israel.jpg" alt="logo" style="width:40px;">
+            </a>
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="menu-about" class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu-contact" class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <!--    
+                .ml-auto will align the Navbar to the right, where 
+                .mr_auto will align the Navbar to the left, that's the default.
+            -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link menu-item-login" href="#" data-toggle="modal" data-target="#myModal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- The Modal Window -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Register/Login Details</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="submitLoginRegister()">
+                        <div class="form-group">
+                            <label for="sle_fullname">Full name:</label>
+                            <input type="text" class="form-control form-control_md" id="fullname"
+                                placeholder="Enter your full name" name="sle_fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="sle_email">Email:</label>
+                            <input type="email" class="form-control form-control_md" id="email"
+                                placeholder="Enter your email" name="sle_email">
+                        </div>
+                        <div class="form-group">
+                            <label for="sle-pswd">Password:</label>
+                            <input type="password" class="form-control form-control_md" id="sle-pswd"
+                                placeholder="Enter password" name="sle_pswd">
+                        </div>
+                        <div class="form-group">
+                            <label for="sle-pswd2">Re-type Password:</label>
+                            <input type="password" class="form-control form-control_md" id="sle-pswd2"
+                                placeholder="Re-type your password" name="sle_pswd2">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="cbx_rememberMe"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Login / Register</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Load HTML according to the clicked link -->
+    <div id="loadHtml" class="load-html">
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.jumbotron-container {
+    height: 200px;
+}
+
+.h1-cat-book {
+    font-family: 'Beth Ellen';
+    text-align: center;
+}
+
+#about-header-h1 {
+    font-family: Sofia, Arial;
+    font-weight: 800;
+    font-size: 3em;
+    background-color: yellow;
+    color: blue;
+}
+#contact-header-h1 {
+    font-family: Beth Ellen, Arial;
+    font-size: 2em;
+    color: blue;
+}
+
+.p-lead {
+    font-family: 'Caveat Brush';
+    text-align: center;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.img-circle {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 1px solid blue;
+}
+
+.menu-item-login {
+    font-family: 'Sofia';
+    font-size: 1.5em;
+}
+
+.h1-title, .h4-title {
+    text-align: center;
+}
+
+.h1-title {
+    font-family: 'Tangerine', serif;
+    font-size: 5em;
+}
+
+.h4-title {}
+
+.carousel-inner img {
+    height: 400px;
+}

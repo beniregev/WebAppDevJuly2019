@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=montserrat");
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.jumbotron-container {
+    height: 200px;
+}
+
+.header-h1 {
+    font-family: 'Beth Ellen';
+    text-align: center;
+}
+
+.p-lead {
+    font-family: 'Caveat Brush';
+    text-align: center;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.img-circle {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 1px solid blue;
+}
+
+.menu-item-login {
+    font-family: 'Sofia';
+    font-size: 1.5em;
+}
+
+.h1-title, .h4-title {
+    text-align: center;
+}
+
+.h1-title {
+    font-family: 'Tangerine', serif;
+    font-size: 5em;
+}
+
+.h4-title {}
+
+.carousel-inner img {
+    height: 400px;
+}
+
+/* @media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+} */
