@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Biyamin (Benny) Regev">
+    <meta name="course" content="Web App Dev - July 2019">
+    <title>פרוייקט אמצע - צור קשר</title>
+    <!-- Web CSS/Fonts Links -->
+    <!-- local CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div id="div-header-search">
+                <a class="search-button" href="javascript:void(0)"><img src="images/search_button.png"></a>
+                <div class="div-search-input">
+                    <input type="text" id="header_search_inputText" name="header.search.searchInput"
+                        value="רשום מילת חיפוש" onFocus="this.value=''" onBlur="this.value='רשום מילת חיפוש'">
+                </div>
+            </div>
+            <!-- <a class="company-logo" href="images/paz_logo.png"><img src="images/paz_logo.png" alt="Company Logo"></a> -->
+            <nav class="nav-menu">
+                <ul class="dropdown">
+                    <li><a class="company-logo" href="javascript:void(0)"><img src="images/paz_logo.png"
+                                alt="Company Logo"></a></li>
+                    <li><a class="home-page memu_item" href="index.html"><img src="images/menu_home_blue.png"
+                                alt="&#8962;"></a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">אודות</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>אודות</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>היסטוריה</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>חזון וערכים</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>מבנה הקבוצה</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>חברי הדירקטוריון</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>הנהלת הקבוצה</span>
+                                </a>
+                            </li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>פרטים והוקרה</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">חטיבות</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)"><span>חטיבות</span></a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>קמעונאות ומסחר</span></a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>תעשיות ושירותים</span></a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>זיקוק</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">אחריות תאגידית</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">אחריות תאגידית</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">הקוד האתי</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">מעורבות חברתית</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">נגישות</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">איכות הסביבה ובטיחות</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">דירוג מעלה</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">קשרי משקיעים</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">פרופיל החברה</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">דו"חות כספיים</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">כלים למשקיע</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">נתוני מניה</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" ref="javascript:void(0)">אסיפות כלליות</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">התחנות שלנו</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">התחנות שלנו</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">נגישות מתחומי פז</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">רשימת תחנות</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">מועדונים</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">קריירה</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">לעבוד בפז</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">ניהול תחנת פז</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">קריירה</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">חדשות ומדיה</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">פרסומות</a></li>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------">
+                            </li>
+                            <li><a class="memu_item" href="javascript:void(0)">הודעות לעיתונות</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container cu-container cu-flex-container">
+        <!-- 
+            .main-container
+                #div-sideMenu
+                #div-breadcrumbs-form
+                    .breadcrumbs
+                    .contactUs-title
+                    #div-form
+                #div-sideCubes
+         -->
+        <div id="div-sideMenu">
+            <nav id="nv-sideMenu">
+                <ul>
+                    <li>
+                        <a id="selected-menu-item" href="javascript:void(0)">
+                            <span>צור קשר</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div id="div-breadcrumbs-form" class="content cu-flex-container"> -->
+        <div id="div-breadcrumbs-form" class="content">
+            <div id="#breadcrumbs" class="breadcrumbs">
+                <a class="c-black" title="קישור לעמוד הבית" href="index.html">
+                    עמוד הבית
+                </a>
+                <span class="treeseparator"> &gt; </span>
+                <span class="treetext">צור קשר</span>
+            </div>
+            <div id="div-contactUs-title" class="contactUs-title">
+                <h1 class="h1-title">צור קשר</h1>
+            </div>
+            <!-- <div id="contactFormWrapper" class="flex-container"> -->
+            <div id="contactFormWrapper" class="div-form">
+                <div class="abstract"></div>
+                <div class="form">
+                    <h2>צור קשר</h2>
+                    <span class="caption">
+                        ליצירת קשר עם קשרי לקוחות אנא מלאו את
+                        הפרטים הבאים ואנו נשמח לעמוד לרשותכם:
+                    </span>
+                    <span class="instructions">
+                        * השדות המסומנים בכוכבית (*) הינם שדות חובה
+                    </span>
+                    <div id="ct100_Panel1" class="contactFormField">
+
+                    </div>
+                    <div class="fields">
+                        <div class="line contactus-fc">
+                            <label for="input-fname"><span class="required">*</span>&nbsp;שם פרטי</label>
+                            <input name="input_fname" type="text" id="input-fname" class="firstNameField">
+                        </div>
+                        <div class="line contactus-fc">
+                            <label for="input-lname"><span class="required">*</span>&nbsp;שם משפחה</label>
+                            <input name="input_lname" type="text" id="input-lname" class="lastNameField">
+                        </div>
+                        <div class="line contactus-fc">
+                            <label for="input-phone"><span class="required">*</span>&nbsp;טלפון</label>
+                            <input name="input_phone" type="text" id="input-phone" class="phoneField">
+                        </div>
+                        <div class="line contactus-fc">
+                            <label for="input-email"><span class="required">*</span>&nbsp;E-mail</label>
+                            <input name="input_email" type="email" id="input-email" class="emailField">
+                        </div>
+                        <div class="line contactus-fc">
+                            <label for="input-content"></label>
+                            <textarea name="input_content" rows="3" cols="20" id="input-content" class="contentTextArea"
+                                onfocus="this.value = ''">תוכן הפנייה</textarea>
+                        </div>
+                        <button type="submit" class="button fLeft nomargins contactus-fc">שלח</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sideCubes">
+            <div class="cubeseparator"></div>
+
+            <div class="cube textCube">
+                <h3 class="header">פרטי יצירת קשר</h3>
+                <div class="content">
+                    <p>
+                        <strong>פז חברת נפט בע"מ <br></strong>יורו פארק, בניין הולנד<br>קיבוץ יקום 60972<br>טל.
+                        שירות לקוחות 1-800-774-774<br>פקס.09-8641714</p>
+                    <p>&nbsp;&nbsp;</p>
+                </div>
+            </div>
+            <div class="cubeseparator"></div>
+
+            <div class="cube textCube">
+                <h3 class="header">עוד בפז</h3>
+                <div class="content">
+                    <p>
+                        <strong>ליצירת קשר עם דוברות פז<br></strong>
+                        <a class="a-paz-info" href="mailto: paz-info@appleseeds.co.il">
+                            לחצו כאן &gt;&gt;
+                        </a>
+                    </p>
+                    <p>
+                        <strong>ליצירת קשר עם מנהלת קשרי משקיעים<br></strong>
+                        <a class="a-paz-info" href="mailto: paz-info@appleseeds.co.il">
+                            לחצו כאן &gt;&gt;
+                        </a>
+                    </p>
+                    <p>
+                        <strong>רוצים לעבוד בפז?</strong>
+                    </p>
+                    <p>
+                        <a class="a-paz-info" href="index.aspx?id=4168">לחצו כאן&gt;&gt;</a>
+                        &nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a class="facebook" href="javascript:void(0)"><img src="images/fb_icon.png" alt="F"></a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="index.html">עמוד הבית</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">מחירונים</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">קריירה</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">תנאי שימוש</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">נגישות</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">מפת האתר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="contact_us.html">צור קשר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">שטחי מסחר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

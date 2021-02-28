@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Biyamin (Benny) Regev">
+    <meta name="course" content="Web App Dev - July 2019">
+    <title>פרוייקט אמצע - עמוד הבית</title>
+    <!-- Web CSS/Fonts Links -->
+    <!-- local CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="setChangePictureInterval();">
+    <header>
+        <div class="container header-container">
+            <div id="div-header-search">
+                <a class="search-button" href="javascript:void(0)"><img src="images/search_button.png"></a>
+                <div class="div-search-input">
+                    <input type="text" id="header_search_inputText" name="header.search.searchInput"
+                        value="רשום מילת חיפוש" onFocus="this.value=''" onBlur="this.value='רשום מילת חיפוש'">
+                </div>
+            </div>
+            <!-- <a class="company-logo" href="images/paz_logo.png"><img src="images/paz_logo.png" alt="Company Logo"></a> -->
+            <nav class="nav-menu">
+                <ul class="dropdown">
+                    <li><a class="company-logo" href="javascript:void(0)"><img src="images/paz_logo.png"
+                                alt="Company Logo"></a></li>
+                    <li><a class="home-page memu_item" href="javascript:void(0)"><img src="images/menu_home_blue.png"
+                                alt="&#8962;"></a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">אודות</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>אודות</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>היסטוריה</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>חזון וערכים</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>מבנה הקבוצה</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>חברי הדירקטוריון</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>הנהלת הקבוצה</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="memu_item" href="javascript:void(0)">
+                                    <span>פרטים והוקרה</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">חטיבות</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)"><span>חטיבות</span></a></li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>קמעונאות ומסחר</span></a></li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>תעשיות ושירותים</span></a></li>
+                            <li><a class="memu_item" href="javascript:void(0)"><span>זיקוק</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">אחריות תאגידית</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">אחריות תאגידית</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">הקוד האתי</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">מעורבות חברתית</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">נגישות</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">איכות הסביבה ובטיחות</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">דירוג מעלה</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">קשרי משקיעים</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">פרופיל החברה</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">דו"חות כספיים</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">כלים למשקיע</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">נתוני מניה</a></li>
+                            <li><a class="memu_item" ref="javascript:void(0)">אסיפות כלליות</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">התחנות שלנו</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">התחנות שלנו</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">נגישות מתחומי פז</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">רשימת תחנות</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">מועדונים</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">קריירה</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">לעבוד בפז</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">ניהול תחנת פז</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">קריירה</a></li>
+                        </ul>
+                    </li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a class="memu_item" href="javascript:void(0)">חדשות ומדיה</a>
+                        <ul class="dropdown-content">
+                            <li><a class="memu_item" href="javascript:void(0)">פרסומות</a></li>
+                            <li><a class="memu_item" href="javascript:void(0)">הודעות לעיתונות</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container main-container">
+            <!-- hp -->
+            <div class="flex-row-tabs flex-container">
+                <!-- tabs fc -->
+                <div class="flex-column-tab">
+                    <!-- tab -->
+                    <img class="bg rounded-bottom-right-corner" src="images/paz_station.JPG" alt="paz_station.jpg">
+                    <!-- <img class="bg rounded-bottom-right-corner" src="‏‏images/paz-station-1.jpg" alt="paz-station-1.jpg"> -->
+                    <div class="tab-text">
+                        <h3>קמעונאות ומסחר</h3>
+                        <p class="tab-text-p">
+                            במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית,
+                            הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות,
+                            יעילות ומובילות. החטיבה פועלת...
+                        </p>
+                        <a class="read-more white-text-color" href="" target="_blank"><span>קרא עוד...</span></a>
+                    </div>
+                </div>
+                <div class="flex-column-tab">
+                    <img class="bg rounded-bottom-right-corner" src="images/paz_refinary.jpg" alt="paz_refinary.jpg">
+                    <div class="tab-text">
+                        <h3>זיקוק</h3>
+                        <p class="tab-text-p">
+                            פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק
+                            של קבוצת פז. החטיבה עוסקת בניהול פעילות
+                            בית הזיקוק באשדוד, הכוללת ייצור תזקיקי
+                            נפט...
+                        </p>
+                        <a class="read-more white-text-color" href="" target="_blank"><span>קרא עוד...</span></a>
+                    </div>
+                </div>
+                <div class="flex-column-tab">
+                    <img class="bg rounded-bottom-right-corner" src="images/paz_industry.jpg" alt="paz_industry.jpg">
+                    <div class="tab-text">
+                        <h3>תעשיות ושירותים</h3>
+                        <p class="tab-text-p">
+                            תחת חטיבת התעשיות והשירותים של פז
+                            פועלות מספר חברות בנות, המתמחות
+                            בפיתוח, ייצור ושיווק מוצרי לוואי של נפט,
+                            ומובילות את השוק...
+                        </p>
+                        <a class="read-more white-text-color" href="" target="_blank"><span>קרא עוד...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-cubes flex-container">
+                <!-- tabs fc -->
+                <div class="cube cube1 flex-column">
+                    <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
+                    <img src="images/cube_credit_cards.jpg" alt="כרטיס אשראי שופרסל וכרטיס אשראי יש">
+                    <div class="cube1-div">
+                        <!-- <a href="javascript:void(0)" id="cube1-a" class="readMore yellow" target="_blank"> -->
+                        <a href="javascript:void(0)" id="cube1-a" class="readMore blue" target="_blank">
+                                <!-- <img class="cube1-read-more-img" src="images/read_more_blue.png" alt="read more"> -->
+                            <span>לפרטים נוספים</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="cube cube2 flex-column">
+                    <div>
+                        <span id="banner1" class="iBennerContent">
+                            <h3>yellow click&amp;pick</h3>
+                            <!-- There are 4 images changing every 2.5 seconds, click the <img> to stop the image-change -->
+                            <img id="changeImg" src="images/cube_change_1_goat.jpg" alt="Yellow Click&Pick" onclick="stop();">
+                            <input type="hidden" banner-link="https://clickandpick.yellow.co.il/" class="hdnBannerLink">
+                        </span>
+                        <div class="cube2-div">
+                            <a href="javascript:void(0)" id="cube2-a" class="readMore blue" target="_blank">
+                                <span>לפרטים נוספים</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cube cube3">
+                    <h3>התחנות שלנו בדרך שלך</h3>
+                    <div class="fc">
+                        <!-- small Flex-Container -->
+                        <div class='cube3-div-texts style="width:50%;"'>
+                            <p class="geoArea">
+                                <!-- <a class="readMore geo-area blue" href="javascript:void(0)" target="_self"> -->
+                                <a class="readMore geo-area" href="javascript:void(0)" target="_self">
+                                    <span>צפון </span>
+                                </a>
+                                <img class="geoArea" src="images/read_more_blue.png" alt="blue">
+                            </p>
+                            <p class="geoArea">
+                                <!-- <a class="readMore geo-area blue" href="javascript:void(0)" target="_self"> -->
+                                <a class="readMore geo-area" href="javascript:void(0)" target="_self">
+                                    <span>מרכז</span>
+                                </a>
+                                <img class="geoArea" src="images/read_more_blue.png" alt="blue">
+                            </p>
+                            <p class="geoArea">
+                                <!-- <a class="readMore geo-area blue" href="javascript:void(0)" target="_self"> -->
+                                <a class="readMore geo-area" href="javascript:void(0)" target="_self">
+                                    <span>דרום </span>
+                                </a>
+                                <img class="geoArea" src="images/read_more_blue.png" alt="blue">
+                            </p>
+                        </div>
+                        <img class="cube3-img" src="images/map-transparent.png" alt="התחנות שלנו בדרך שלך">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a class="facebook" href="javascript:void(0)"><img src="images/fb_icon.png" alt="F"></a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">עמוד הבית</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">מחירונים</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">קריירה</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">תנאי שימוש</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">נגישות</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">מפת האתר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="contact_us.html">צור קשר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">שטחי מסחר</a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
