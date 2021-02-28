@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <meta name="course" content="Web App Dev - July 2019">
+    <title>M8E4-Extra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="h1-title">Making A Beautiful Page</h1>
+    </header>
+    <main class="row-display-flex align-items-center container-border">
+        <article class="row-display-flex align-items-center width-10-p left-menu container-border">
+            <nav id="vertical-menu">
+                <div id="div-left">
+                    <a href="#">&#9776;</a>
+                    <a href="#">File</a>
+                    <a href="#">Edit</a>
+                    <a href="#">View</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Window</a>
+                    <a href="#">Help</a>
+                </div>
+            </nav>
+        </article>
+        <article id="article-center"
+            class="row-display-flex align-items-center column-center width-37-50-p container-border">
+            <div id="div-center">
+                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+            </div>
+        </article>
+        <article id="article-right"
+            class="row-display-flex column-right width-37-50-p container-border">
+            <div id="div-right">
+                <!-- Row 1 Column-3 (Right), Row 1 (Top) 100% of 37.5% -->
+                <article class="row-display-flex container-border height-50-p">
+                    <p class="width-100-p">
+                        Parent: Row-1_Column-Right, First-Row (top-row)
+                    </p>
+                </article>
+                <!-- Row 1 Column-3 (Right), Row 2 (Bottom) 2 columns each 50% of parent width -->
+                <article class="row-display-flex row-1-col-3-row height-50-p">
+                    <div class="row1-col3-row container-border">
+                        Parent: Row-1_Column-Right, 
+                        This: 2nd-Row_left-column
+                    </div>
+                    <div class="row1-col3-row container-border">
+                        Parent: Row-1_Column-Right, 
+                        This: 2nd-Row_right-column
+                    </div>
+                </article>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <h3>Footer Text</h3>
+    </footer>
+</body>
+
+</html>
