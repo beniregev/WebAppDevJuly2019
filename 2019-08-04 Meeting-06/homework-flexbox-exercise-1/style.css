@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-row, .flex-column {
+    background-color: cyan;
+    height: 100px;
+}
+
+.flex-row > .flex-container1,  .flex-column > .flex-container2 {
+    display: flex;
+}
+
+.flex-container1 {
+    flex-direction: row;
+}
+
+.flex-container2 {
+    flex-direction: column;
+}
+
+.flex-row > .flex-container1 > div,  .flex-column > .flex-container2 > div {
+  width: 100px;
+  background-color: orange;
+  margin: 5px;
+}

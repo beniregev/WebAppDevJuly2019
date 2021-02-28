@@ -1,0 +1,28 @@
+/* Styles go here */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  background-color: lightgray;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  /*height: 100px;*/
+  width: 33.33%;
+  float: left;
+}
+
+.content {
+  border: 1px solid black;
+  padding: 50px;
+  background-color: cyan;
+  margin: 10px;
+}

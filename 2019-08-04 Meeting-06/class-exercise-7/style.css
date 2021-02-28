@@ -1,0 +1,41 @@
+/* Styles go here */
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: cyan;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+
+.column {
+  width: 33.33%;
+}
+
+
+/*float*/
+
+.float .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.float .column {
+  float: left;
+  
+}
+
+/*flexbox*/
+.flexbox .row {
+  display: flex;
+}
+
+/* In flexs box giving margin to the columns will not break line if no-wrap is the default*/
+/*.flexbox .column {*/
+/*  margin: 10px;*/
+/*}*/

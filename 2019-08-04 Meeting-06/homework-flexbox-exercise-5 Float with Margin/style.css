@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    margin: 20px auto;
+}
+
+.circle {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.circle-container {
+    background-color: cyan;
+    padding: 200px;
+}
+
+main {
+    background-color: silver;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    width: 50%;
+    padding: 20px;
+}

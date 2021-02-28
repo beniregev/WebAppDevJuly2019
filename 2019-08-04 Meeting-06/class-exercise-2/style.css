@@ -1,0 +1,38 @@
+/* Styles go here */
+
+.static {
+  position: static;
+  border: 1px solid red;
+  background-color: red;
+}
+
+.relative {
+  border: 1px solid blue;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: blue;
+}
+
+.fixed {
+  border: 1px solid green;
+  background-color: green;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+}
+
+.abs-parent {
+  border: 1px solid orange;
+  height: 300px;
+  width: 70%;
+  position: relative;
+}
+
+.absolute {
+  border: 1px solid cyan;
+  background-color: cyan;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

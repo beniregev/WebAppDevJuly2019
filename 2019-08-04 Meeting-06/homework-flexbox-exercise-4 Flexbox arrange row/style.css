@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#flex-row1,  #flex-row2 {
+    background-color: cyan;
+    height: 50px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+#flex-row1 {
+    align-items: center;
+}
+
+#flex-row2 {
+    align-items: stretch;
+}
+
+#flex-row1 > div,  #flex-row2 > div {
+  background-color: orange;
+  margin: 5px;
+}
+
+.flex-item1 {
+    flex-grow: 1;
+}
+
+.flex-item2 {
+    flex-grow: 2;
+}

@@ -1,0 +1,46 @@
+/* Styles go here */
+
+* {
+  box-sizing: border-box;
+}
+
+.float-wrap {
+  border: 1px solid red;
+}
+
+.float-wrap > img {
+  width: 300px;
+  float: left;
+  padding: 5px;
+}
+
+p.clear {
+  /*clear: left; */
+}
+
+/*.clearfix {*/
+/*  overflow: auto;*/
+/*}*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  background-color: cyan;
+  border: 2px solid red;
+  padding: 100px 0;
+  
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

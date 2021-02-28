@@ -1,0 +1,29 @@
+/* Styles go here */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  nav, section, footer {
+    border: 1px solid black;
+  }
+  
+  nav {
+    position: fixed;
+    width: 200px;
+  }
+  
+  section {
+    margin-left: 200px;
+  }
+  
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+  }

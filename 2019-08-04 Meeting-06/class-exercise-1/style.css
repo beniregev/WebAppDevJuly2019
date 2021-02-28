@@ -1,0 +1,23 @@
+/* Styles go here */
+
+.horizontal-center {
+  background-color: cyan;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.hide {
+  display: none;
+  /*visibility: hidden;*/
+  background-color: green;
+  height: 100px;
+  margin: 10px;
+}
+
+
+.hover-me:hover ~ .hide {
+  display: block;
+  /*visibility: visible;*/
+} 

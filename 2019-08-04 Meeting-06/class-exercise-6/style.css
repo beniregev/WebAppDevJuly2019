@@ -1,0 +1,63 @@
+/* Styles go here */
+
+.flex-container {
+  display: flex;
+  background-color: lightgray;  
+  margin: 10px 0;
+
+}
+
+.first-example .flex-container {
+}
+
+.first-example p {
+}
+
+.second-example > .flex-container > div,  .third-example > .flex-container > div,
+.column-example > .flex-container > div,  .grow-example > .flex-container > div{
+  width: 100px;
+  background-color: orange;
+  margin: 5px;
+}
+
+.second-example > .flex-container > div:first-child {
+  /*height: 50px;*/
+}
+
+.second-example > .flex-container {
+  justify-content: space-around;
+  height: 300px;
+  align-items: flex-end;
+}
+
+.third-example > .flex-container > .go-right {
+  margin-left: auto;
+}
+
+
+.column-example > .flex-container {
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.grow-example > .flex-container > div {
+  flex-grow: 1;
+}
+
+.grow-example > .flex-container > div:last-child {
+  flex-grow: 2;
+}
+
+
+.wrap-example > .flex-container {
+  flex-wrap: wrap;
+}
+
+.wrap-example > .flex-container > div{
+  width: 200px;
+  background-color: orange;
+  margin: 5px;
+}

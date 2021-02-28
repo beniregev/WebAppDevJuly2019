@@ -1,0 +1,47 @@
+/* Styles go here */
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: Arial;
+}
+    
+nav, article, .second-section {
+  border: 1px solid black;
+}
+  
+nav > a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+  
+header {
+  text-align: center;
+  color: red;
+  padding: 10px 0;
+}
+  
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+.column {
+  float: left;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-50 {
+  width: 50%;
+}

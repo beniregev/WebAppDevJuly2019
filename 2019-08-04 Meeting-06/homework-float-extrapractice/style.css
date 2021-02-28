@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+}
+  
+header {
+    background-color: yellow;
+    color: blue;
+    font-size: 24px;
+    text-align:center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 3px solid black;
+    border-color: black;
+}
+  
+nav {
+    /*  
+        margin-top set to: 
+        18px height of header + 10px * 2 of padding = 38px
+        And using the border to make a thick line between header 
+        and nav.
+    */
+    margin-top: 53px;   
+    background-color: cyan;
+    width: 100%;
+    text-align: center;
+    border: 0px 3px solid black;
+}
+
+nav > a {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    color: gray;
+}
+  
+nav > a:hover {
+    background-color: lightblue;
+}
+
+main {
+    background-color: silver;
+    border-collapse: collapse;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    border: 4px solid black;
+    padding: 3px;
+    /*position: relative;*/
+}
+
+.article-ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+.image-ltr {
+    height: 350px;
+}
+
+.image-rtl {
+    width: 100%;
+}
+
+#i-create-these {
+    margin: 24px 0px;
+}
+
+.article-rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/*cleanfix*/
+.row::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+}
+
+footer > p:first-child {
+    float: left;
+    direction: ltr;
+    text-align: left;
+}
+
+
+footer > p:last-child {
+    float: right;
+    direction: rtl;
+    text-align: right;
+}
+
+#img-flag {
+    margin: 0px 10px;
+}
+  
+  

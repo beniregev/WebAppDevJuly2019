@@ -1,0 +1,37 @@
+.page-body {
+    direction: ltr;
+    text-align: center;
+    color: #333;
+    background-color: #e0e0e0;
+}
+#img-div {
+    background-color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+#image {
+    max-width: 100%;
+}
+
+.life-time-line {
+    max-width: 550px;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0px auto 50px auto;
+}
+
+li {
+    margin: 16px 0;
+}
+
+#block-quote {
+    width: 45%;
+    background-color: white;
+    margin:  10px auto;
+}
+
+#h3-tribute-link {
+    width: 75%;
+    margin:  30px auto;
+}
