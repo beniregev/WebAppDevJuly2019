@@ -1,0 +1,101 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: white;
+}
+
+.body-content {
+    background-color: rgb(238, 124, 115);
+}
+.container {
+    width: 900px;
+    /* border: 3px solid black; */
+    /* background-color: rgb(238, 124, 115); */
+}
+
+div.jumbotron {
+    color: white;
+    background-color: rgb(238, 124, 115);
+    margin: 0 0;
+    padding: 0 0;
+}
+
+div.container {
+    width: 100%;
+}
+
+div.jumbotron > div.container > h2 {
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+}
+
+div.jumbotron > div.container > p {
+    width: 67%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px auto;
+    justify-content: center;
+}
+
+nav ul li.active > a {
+    color: #000;
+    font-size: 3em;
+    font-weight: 1000;
+    text-decoration-line: underline;
+}
+
+ul > li > a {
+    color: #333;
+    font-weight: bold;
+}
+
+ul > li > a.nav-link:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #333;
+}
+
+ul > li > a#menu-theTeam.active {
+    text-decoration-line: underline;
+    text-decoration-color: #333;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.card-deck-container {
+    display: flex;
+    justify-content: center;
+}
+
+div.row.card-deck {
+    width: 99.66%;
+    /* border: 2px solid blue; */
+}
+
+div.card {
+    color: white;
+    background-color: transparent;
+}
+
+.img-circle {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 1px solid blue;
+}
+
+h4.card-title {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+pre.card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: white;
+}

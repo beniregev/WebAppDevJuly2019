@@ -1,0 +1,21 @@
+.container {
+    width: 450px;
+    border: 3px solid black;
+}
+
+.form-element {
+    padding: 5px 10px;
+}
+
+#rng-scale {
+    display: block;
+    margin: auto 10px;
+}
+
+.input-span {
+    margin: auto 10px;
+}
+
+.input-element {
+    width: 75%;
+}
