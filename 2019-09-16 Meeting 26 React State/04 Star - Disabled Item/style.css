@@ -1,0 +1,40 @@
+#mainTitle, #secondaryTitle {
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+#mainTitle {
+    font-size: 1.2em;
+}
+
+#secondaryTitle {
+    font-size: 0.75em;
+}
+
+#root {
+    display: flex;
+    justify-content: flex-start
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: silver;
+    margin: 10px;
+}
+
+button {
+    font-weight: bold;
+    color: black;
+    padding: 5px 20px;
+    margin: 10px 2px;
+}
+
+.disabled {
+    color: #a0a0a0;
+    background-color: #c0c0c0;
+}
+.cyan { background-color: cyan; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+.red { background-color: red; }
+.pink { background-color: pink; }
