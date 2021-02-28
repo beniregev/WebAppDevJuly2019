@@ -1,0 +1,40 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.header-h1 {
+    font-family: 'Sofia';
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #818181;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 270px;
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: yellow;
+    border: 5px solid blue;
+}

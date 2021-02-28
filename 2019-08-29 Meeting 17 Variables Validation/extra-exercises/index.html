@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="course" content="Web App Dev - July 2019">
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <title>JavaScript Variables Validation - Extra Exercises</title>
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap: jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap: Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap: Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <!-- Local CSS and JavaScript files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-h1">JavaScript Variables Validation - Extra Exercises</h1>
+    </header>
+
+    <!-- 
+        Bootstrap Side Navigation Bar Colored Navbar 
+    -->
+    <div class="sidenav navbar-dark">
+        <a href="javascript:void(0)">Exercise Part 1 (Q: 1-5)</a>
+        <a href="javascript:void(0)">Exercise Part 2 (Q: 6-10)</a>
+        <a href="javascript:void(0)">Exercise Part 3 (Q: 11-17)</a>
+    </div>
+    <div class="main d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+            <label class="col-2" for="sle-q1">Q 1</label>
+            <input class="col-9" type="text" id="sle-q1" class="form-control" placeholder="Enter an integer">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q2">Q 2</label>
+            <input class="col-9" type="text" id="sle-q2" class="form-control" placeholder="Enter an integer">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q3">Q 3</label>
+            <input class="col-9" type="text" id="sle-q3" class="form-control" placeholder="Enter an integer">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+            <label class="col-2" for="sle-q4">Question 4</label>
+            <input class="col-9" type="text" id="sle-q4" class="form-control" placeholder="Enter a year">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q5">Q 5</label>
+            <input class="col-9" type="text" id="sle-q5" class="form-control" placeholder="Enter a character">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q6">Q 6</label>
+            <input class="col-9" type="text" id="sle-q6" class="form-control" placeholder="Enter an alphabetic letter">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+            <label class="col-2" for="sle-q7">Q 7</label>
+            <input class="col-9" type="text" id="sle-q7" class="form-control" placeholder="Enter a character">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q8">Q 8</label>
+            <input class="col-9" type="text" id="sle-q8" class="form-control" placeholder="Enter a character">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q9">Q 9</label>
+            <input class="col-9" type="text" id="sle-q9" class="form-control" placeholder="Enter week number">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+            <label class="col-2" for="sle-q10">Q 10</label>
+            <input class="col-9" type="text" id="sle-q10" class="form-control" placeholder="Enter month (1-12)">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q11">Q 11</label>
+            <input class="col-9" type="text" id="sle-q11" class="form-control" placeholder="Enter an amount">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q12">Q 12</label>
+            <input class="col-3" type="text" id="sle-q12" class="form-control" placeholder="Enter angle 1">
+            <input class="col-3" type="text" id="sle-q12" class="form-control" placeholder="Enter angle 2">
+            <input class="col-3" type="text" id="sle-q12" class="form-control" placeholder="Enter angle 3">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q13a">Q 13&amp;14</label>
+            <input class="col-2" type="text" id="sle-q13a" class="form-control" placeholder="Enter side 1">
+            <input class="col-2" type="text" id="sle-q13b" class="form-control" placeholder="Enter side 2">
+            <input class="col-2" type="text" id="sle-q13c" class="form-control" placeholder="Enter side 3">
+            <button class="btn btn-primary col-2">Try It 13</button>
+            <button class="btn btn-primary col-2">Try It 14</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <label class="col-2" for="sle-q15a">Q 15</label>
+            <input class="col-3" type="text" id="sle-q15a" class="form-control" placeholder="Enter fox X^2">
+            <input class="col-3" type="text" id="sle-q15b" class="form-control" placeholder="Enter for X^1">
+            <input class="col-3" type="text" id="sle-q15c" class="form-control" placeholder="Enter for X^0">
+            <button class="btn btn-primary col-1">Try It</button>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+                <label class="col-2" for="sle-q17">Q 17</label>
+                <input class="col-9" type="text" id="sle-q17" class="form-control" placeholder="Enter electricity unit charge">
+                <button class="btn btn-primary col-1">Try It</button>
+            </div>
+        </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
