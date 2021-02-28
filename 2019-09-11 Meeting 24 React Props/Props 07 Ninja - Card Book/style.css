@@ -1,0 +1,44 @@
+#div-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.travel-card {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    border: 2px solid blue;
+}
+
+.cardImg {
+    height: 250px;
+    margin: 2px auto;
+    border: 1px solid blue;
+}
+
+h4 {
+    width: 85%;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 2px auto;
+}
+
+p {
+    width: 70%;
+    padding: 5px 10px;
+    margin: 2px auto;
+}
+
+#dotsBreadCrumbs {
+    width: 15%;
+    height: 35px;
+    padding: auto auto;
+    margin: 2px auto;
+}
+
+circle.active {
+    fill: blue;
+}
