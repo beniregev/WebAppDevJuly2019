@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Binhyamin (Benny) Regev">
+    <title>JS Functions - Exercise 4</title>
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap: jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap: Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap: Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="container">
+    <header>
+        <h1>JS Functions - Exercise 4</h1>
+    </header>
+    <main>
+        <!-- --------------------------------------------------------------------------------- -->
+        <!-- mouseOver ==> Text visible ; mouseOut ==> Text Hidden ; onClick ==> Text Toggling -->
+        <!-- --------------------------------------------------------------------------------- -->
+        <div id="main-container" class="d-flex mb-3">
+            <div class="p-2 flex-fill bg-primary img-txt">
+                <img id="israel-flag-img" class="flag-image" src="images/flag-of-israel.png" alt="israel"
+                    onclick="myOnClick(this);" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+                <p id="israel-flag-txt" class="flag-text blue-text-color">Israel</p>
+            </div>
+            <div class="p-2 flex-fill bg-primary img-txt">
+                <img id="usa-flag-img" class="flag-image" src="images/flag-of-usa.jpg" alt="usa"
+                    onclick="myOnClick(this);" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+                <p id="usa-flag-txt" class="flag-text blue-text-color">USA</p>
+            </div>
+            <div class="p-2 flex-fill bg-primary img-txt">
+                <img id="italy-flag-img" class="flag-image" src="images/flag-of-italy.jpg" alt="italy"
+                    onclick="myOnClick(this);" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+                <p id="italy-flag-txt" class="flag-text blue-text-color">Italy</p>
+            </div>
+            <div class="p-2 flex-fill bg-primary img-txt">
+                <img id="netherlands-flag-img" class="flag-image" src="images/flag-of-netherlands.png" alt="netherlands"
+                    onclick="myOnClick(this);" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+                <p id="netherlands-flag-txt" class="flag-text blue-text-color">Netherlands</p>
+            </div>
+            <div class="p-2 flex-fill bg-primary img-txt">
+                <img id="france-flag-img" class="flag-image" src="images/flag-of-france.png" alt="france"
+                    onclick="myOnClick(this);" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+                <p id="france-flag-txt" class="flag-text blue-text-color">France</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

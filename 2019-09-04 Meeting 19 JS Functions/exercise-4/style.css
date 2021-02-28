@@ -1,0 +1,48 @@
+* {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.flag-image {
+    height: 125px;
+}
+
+.img-txt {
+    position: relative;
+}
+
+.flag-text {
+    display: none;
+    overflow: hidden;
+    /*  I moved the text from the vertical center because it 
+        was blocking the star of Davind in the flag of Israel */
+    bottom: 0.75%;
+    padding: 4px 10px;
+    position: absolute;
+    background-color: lightblue;
+}
+
+#israel-flag-txt {
+    left: 35%;
+    
+}
+
+#usa-flag-txt {
+    left: 40%;
+}
+
+#italy-flag-txt {
+    left: 37%;
+}
+
+#netherlands-flag-txt {
+    left: 25%;
+}
+
+#france-flag-txt {
+    left: 34%;
+}
+
+.active {
+    display: inline-block;
+}

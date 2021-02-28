@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <meta name="course" content="Web App Dev - July 2019">
+    <meta name="meeting" content="19 JavaScript Functions">
+    <title>05 Constructor - Cars App</title>
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap: jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap: Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap: Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="container">
+    <header>
+        <h1>JS Functions - Exercise 5: Constructor</h1>
+    </header>
+    <main>
+        <!-- <div id="div-tbl-cars" class="table-responsive-md"> -->
+        <div id="div-tbl-cars">
+            <table id="tbl-cars" class="table table-striped order-list">
+                <thead class="thead-dark">
+                    <tr id="tbl-headings">
+                        <th class="col-2 col-md-2">Brand</th>
+                        <th class="col-2 col-md-2">Model</th>
+                        <th class="col-2 col-md-2">Color</th>
+                        <th class="col-1 col-md-1">Year</th>
+                        <th class="col-2 col-md-2">Current KM</th>
+                        <th class="col-2 col-md-2">KM / Year</th>
+                        <th class="col-1 col-md-1">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr id="tbl-footer">
+                        <td id="td-btn-addRow" colspan="6" style="text-align: left;">
+                            <input type="button" id="btn-addRow" class="btn btn-lg btn-block btn-primary"
+                                data-toggle="modal" data-target="#myModal" value="Add New Car" />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div>
+                <h5 id="h5-statusLine">There are 0 cars in the cars list</h5>
+            </div>
+            <div id="div-result" class="form-group">Show details of new car added</div>
+        </div>
+
+        <!-- The Modal Window -->
+        <div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title">Add New Car</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="sle-brand">Brand:</label>
+                                    <input type="text" class="form-control form-control_md" id="sle-brand"
+                                        placeholder="Enter brand" title="Brand of the car" name="sle_brand">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sle-model">Model:</label>
+                                    <input type="text" class="form-control form-control_md" id="sle-model"
+                                        placeholder="Enter model" title="Model of the car" name="sle_model">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sle-year">Year:</label>
+                                    <input type="number" class="form-control form-control_md" id="sle-year"
+                                        placeholder="Enter year" title="Manufacturing year of the car" name="sle_year">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sle-color">Color:</label>
+                                    <input type="text" class="form-control form-control_md" id="sle-color"
+                                        placeholder="Enter color" title="Color of the car" name="sle_model">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sle-km">Current KM count:</label>
+                                    <input type="number" class="form-control form-control_md" id="sle-km"
+                                        placeholder="Enter KM so far" name="sle_km">
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div id="buttons-belt" class="modal-footer">
+                            <button type="button" id="btn-addCar" class="btn btn-primary" data-dismiss="modal">Add
+                                Car</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+    "cars": [
+        {
+            "brand": "Toyota",
+            "model": "CH-R",
+            "color": "Cyan",
+            "year": 2017,
+            "km": 45678
+        },
+        {
+            "brand": "Hammer",
+            "model": "H2",
+            "color": "Yellow",
+            "year": 2008,
+            "km": 654321
+        },
+        {
+            "brand": "Ford",
+            "model": "Escort",
+            "color": "White",
+            "year": 1979,
+            "km": 998877
+        }
+    ]
+}

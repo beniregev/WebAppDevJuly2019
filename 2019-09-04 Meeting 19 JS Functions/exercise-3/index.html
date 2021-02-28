@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Binhyamin (Benny) Regev">
+    <title>JS Functions - Exercise 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap: jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap: Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap: Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="container">
+    <header>
+        <h1>JS Functions - Exercise 3</h1>
+    </header>
+    <main>
+        <div>
+            <form">
+                <div class="form-group">
+                    <label for="sle-word">The word to search:</label>
+                    <input type="text" class="form-control form-control_md" id="sle-word"
+                        placeholder="Enter a word" name="sle_word">
+                </div>
+                <div class="form-group">
+                    <label for="sle-char">2nd Number:</label>
+                    <input type="text" class="form-control form-control_md" id="sle-char" 
+                        placeholder="Enter character" name="sle_char" size="1">
+                </div>
+                <div>
+                    <button type="button" onclick="getArgsAndDisplayResult();" class="btn btn-primary">Find</button>
+                </div>
+                <div id="div-result" class="form-group">The result will be shown here</div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+    "cars": [
+        {
+            "brand": "Toyota",
+            "model": "Corola",
+            "color": "Black",
+            "year": 2018,
+            "km": 12345
+        },
+        {
+            "brand": "Kia",
+            "model": "Sportage",
+            "color": "Dark Gray",
+            "year": 2018,
+            "km": 34567
+        },
+        {
+            "brand": "Subaro",
+            "model": "Liana",
+            "color": "White",
+            "year": 1987,
+            "km": 987654
+        }
+    ]
+}
