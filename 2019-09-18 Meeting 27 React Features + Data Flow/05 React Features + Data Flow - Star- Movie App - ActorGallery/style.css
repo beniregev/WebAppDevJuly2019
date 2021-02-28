@@ -1,0 +1,35 @@
+/* .actor-card {
+    display: flex;
+    width: 315px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    border: 2px solid blue;
+}
+
+.actor-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2px 4px;
+    margin: 2px;
+}
+
+#fullname {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#dateOfBirth {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#imdbUrl {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+} */
