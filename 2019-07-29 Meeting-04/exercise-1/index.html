@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script>
+			function changeHealineText() {
+				document.getElementById('page-headline')
+					.innerHTML="I need a cup of Java and a CSS of JavaScript";
+			}
+		</script>
+		<script src="script.js"></script>
+	</head>
+	<body id="page-body" style="background-color:yellow;">
+		<h1 id="page-headline">Hello JavaScript Developers</h1>
+		<img id="picture-to-change" 
+			src="https://bit.ly/fcc-relaxing-cat"		
+			alt="A cute orange cat lying on its back.">
+
+		<p>
+			<!-- Change picture using embedded JavaScript -->
+			<button type="button" onclick="changeHealineText()">
+			Change Headline Text
+			</button>
+				
+			<!-- Change picture using embedded JavaScript -->
+			<button type="button" onclick="changePicture()">Change Picture</button>
+			
+			<!-- Change picture using inline JavaScript -->
+			<button type="button" 
+				onclick="document.getElementById('page-body').style
+								.backgroundColor='mediumspringgreen'">
+			Change Backgroud Color
+			</button>
+		</p>
+	</body>
+</html>
