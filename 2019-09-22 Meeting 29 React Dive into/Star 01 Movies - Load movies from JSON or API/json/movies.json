@@ -1,0 +1,92 @@
+{
+    "movies": [
+        {
+            "id": 6341,
+            "title": "Blue Thunder",
+            "runtime": 109,
+            "director": "John Badham",
+            "imageUrl": "/knmliKe3B82juirhr0dArhy6cd7.jpg",
+            "imdbUrl": "tt0085255"
+        }
+        ,{
+            "id": 581797,
+            "title": "WarGames",
+            "runtime": 114,
+            "director": "John Badham",
+            "imageUrl": "/rQocmooj7bFKS2vZfzWBB5O12eR.jpg",
+            "imdbUrl": "tt0086567"
+        }
+        ,{
+            "id": 10724,
+            "title": "Fire Fox",
+            "runtime": 136,
+            "director": "Clint Eastwood",
+            "imageUrl": "/1QK1xhmvnLLZhDC8DNaFt08psp9.jpg",
+            "imdbUrl": "tt0083943"
+        }
+        ,{
+            "id": 11614,
+            "title": "Bomber",
+            "runtime": 101,
+            "director": "Michele Lupo",
+            "imageUrl": "/2BNrr3ivgkGeDjPRcXnk29qpRn5.jpg",
+            "imdbUrl": "tt0083675"
+        }
+        ,{
+            "id": 10015,
+            "title": "HeartBreak Ridge",
+            "runtime": 130,
+            "director": "Clint Eastwood",
+            "imageUrl": "/hbKkfRpjtoCYabxEmhklM6MhF7g.jpg",
+            "imdbUrl": "tt0091187"
+        }
+        ,{
+            "id": 9570,
+            "title": "The Black Hole",
+            "runtime": 98,
+            "director": "Gary Nelson",
+            "imageUrl": "/20IPuZOXNRZJBN0loUYClFR8cpx.jpg",
+            "imdbUrl": "tt0078869"
+        }
+        ,{
+            "id": 1941,
+            "title": "Exodus",
+            "runtime": 208,
+            "director": "Otto Preminger",
+            "imageUrl": "/lwyu4Bz5TXBplnfeFPJW5aGjFiE.jpg",
+            "imdbUrl": "tt0053804"
+        }
+        ,{
+            "id": 9394,
+            "title": "They Call Me Trinity",
+            "runtime": 106,
+            "director": "Enzo Barboni",
+            "imageUrl": "/5b38dfzKqUmTY2HRYrdKJ8vFWAR.jpg",
+            "imdbUrl": "tt0067355"
+        }
+        ,{
+            "id": 984,
+            "title": "Dirty Harry",
+            "runtime": 102,
+            "director": "Don Siegel",
+            "imageUrl": "/4j2tBAusIVev4ZaScncIHknP7eV.jpg",
+            "imdbUrl": "tt0066999"
+        }
+        ,{
+            "id": 9386,
+            "title": "In the Line of Fire",
+            "runtime": 128,
+            "director": "",
+            "imageUrl": "/bmeD5LdQiRaZmVHbySXw6WJgAVA.jpg",
+            "imdbUrl": "tt0107206"
+        }
+        ,{
+            "id": 33,
+            "title": "Unforgiven",
+            "runtime": 131,
+            "director": "Clint Eastwood",
+            "imageUrl": "/km6qw4qUkHQRN5y2U1juM1WkBFh.jpg",
+            "imdbUrl": "tt0105695"
+        }
+    ]
+}

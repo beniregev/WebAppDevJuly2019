@@ -1,0 +1,15 @@
+/* style.css Styles go here */
+
+h1, h2 {
+  text-align: center;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
