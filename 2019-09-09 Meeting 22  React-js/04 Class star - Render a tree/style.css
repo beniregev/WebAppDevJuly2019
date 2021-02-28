@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 250px;
+    border: 5px solid black;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: gray;
+}
+.box3 {
+    flex-direction: column;
+    justify-content: space-around; 
+    background-color: silver;
+}
+
+.box4 {
+    height: 35%;
+    background-color: yellow;
+}

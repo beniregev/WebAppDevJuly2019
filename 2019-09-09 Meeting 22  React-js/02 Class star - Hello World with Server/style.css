@@ -1,0 +1,8 @@
+.border-3px-solid-black {
+    width: 10%;
+    border: 3px solid black;
+}
+
+li {
+    padding: 2px 5px;
+}
