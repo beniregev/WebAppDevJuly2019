@@ -1,0 +1,31 @@
+<!-- 
+Click button "Add Tomato" and a tomato will be added tp the shopping list. 
+
+Enter an item you wish to add in the <input> text and click "Add Item" to add your item to the shopping list.
+-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <meta name="description" content="Lesson 5, exercise 1 with bonus: Click button 'Add Tomato' and a tomato will be added tp the shopping list. Bonus: Add an <input> text field, the user can enter name of an item and when clicking 'Add Item' the item will be added to the shopping list.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body class="page-body">
+    <h1 id="h1-shopping-list">Shopping List</h1>
+    <ul id="shopping-list">
+      <li id="li-milk">Milk</li>
+      <li id="li-eggs">Eggs</li>
+      <li id="li-bread">Bread</li>
+    </ul>
+    <form>
+      <input id="item-to-add" type="text" placeholder="Enter new item name">
+      <button onClick="addItemFromInputField()">Add Item</button>
+    </form>
+    <button onClick="addTomato()">Add Tomato</button>
+  </body>
+
+</html>

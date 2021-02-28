@@ -1,0 +1,10 @@
+.page-body {
+  direction: ltr;
+  text-align: left;
+}
+
+#h1-shopping-list {
+  text-align: center;
+  color: blue;
+  background-color: yellow;
+}
