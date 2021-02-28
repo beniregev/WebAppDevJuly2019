@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="course" content="Web App Dev - July 2019">
+    <meta name="author" content="Binyamin (Benny) Regev">
+
+    <title>Meeting 9 - Exercise 2</title>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="h1-title">Forms - Exercise 2 - My 2nd Form</h1>
+    <form id="frm-details" class="frm-login">
+        <fieldset>
+            <legend>Login Information</legend>
+            <div class="div-row">
+                <label class="column-left" for="sle-email">Your e-Mail: </label>
+                <input type="email" id="sle-email" class="column-right" name="sle_email"
+                    placeholder="Enter e-mail address">
+            </div>
+            <div id="div-password" class="div-row">
+                <label class="column-left" for="sle-password">Your Password: </label>
+                <input type="password" id="sle-password" class="column-right" name="sle_password"
+                    placeholder="Type your password">
+            </div>
+            <div id="div-re-password" class="div-row">
+                <label class="column-left" for="sle-retype-password">Re-Type Password: </label>
+                <input type="password" id="sle-retype-password" class="column-right" name="sle_retype_password"
+                    placeholder="Retype your password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Social and Hobbies</legend>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Age: </label>
+                <input type="number" id="sle-age" class="column-right" name="sle_age" placeholder="Enter Age">
+            </div>
+            <div class="div-row">
+                <label class="column-left">Social Status: </label>
+
+                <input type="radio" id="rb-single" name="grpSocialStatus" checked>
+                <label for="rb-single" class="rb-label">Single</label>
+
+                <input type="radio" id="rb-married" name="grpSocialStatus">
+                <label for="rb-married" class="rb-label">Married</label>
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Hobbies: </label>
+
+                <div class="column-right">
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-sport" name="grpHobbies">
+                        <label for="cbx-sport" class="cbx-label">Sport</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-reading" name="grpHobbies">
+                        <label for="cbx-reading" class="cbx-label">Reading</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-programming" name="grpHobbies">
+                        <label for="cbx-programming" class="cbx-label">Programming</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-cooking" name="grpHobbies">
+                        <label for="cbx-cooking" class="cbx-label">Cooking</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-baking" name="grpHobbies">
+                        <label for="cbx-baking" class="cbx-label">Baking</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-cycling" name="grpHobbies">
+                        <label for="cbx-cycling" class="cbx-label">Cycling</label>
+                    </div>
+                </div>
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Publisher ID: </label>
+                <input type="text" id="sle-publisher" class="column-right" name="sle_publisher" value="W24LCH" readonly>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Profile Information</legend>
+            <div class="div-row">
+                <label class="column-left" for="btn-imagePicker">Profile Photo: </label>
+                <input type="file" name="" id="btn-imagePicker" accept="image/*" onchange="readURL(this);">
+                <img id="img-profile" class="column-right" src="" alt="">
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-fullname">Full Name: </label>
+                <input type="text" id="sle-fullname" class="column-right" name="sle_fullname"
+                    placeholder="Enter First and Last Name">
+            </div>
+            <div id="div-address" class="div-row">
+                <label class="column-left" for="address">Address: </label>
+                <input type="text" id="sle-address" class="column-right" name="sle_address"
+                    placeholder="Enter street, house# and city">
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="mle-aboutMe">Describe yourself: </label>
+                <textarea id="mle-aboutMe" class="column-right" name="mle_aboutMe" rows="7" cols="80">
+                </textarea>
+            </div>
+        </fieldset>
+        <div class="buttons">
+            <button type="submit" class="my-button">Submit</button>
+            <button type="reset" class="my-button">Reset</button>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

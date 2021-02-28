@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="course" content="Web App Dev - July 2019">
+    <meta name="author" content="Binyamin (Benny) Regev">
+    <title>Meeting 9 - Exercise 3</title>
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="h1-title">Forms - Exercise 3 - My 3rd Form</h1>
+    <form id="frm-details" class="frm-login">
+        <fieldset>
+            <legend>Login Information</legend>
+            <div class="div-row">
+                <label class="column-left" for="sle-email">Your e-Mail: </label>
+                <!-- 
+                    e-mail address must be minimum 7 characters ("a@b.com") 
+                    and maximum 30 characters long (exercise requirements) 
+                    ----------------------------------------------------------------------
+                    e-mail address must comply with the following Regular-Expression:
+
+                    ^			        ==> start of the line
+                    [_A-Za-z0-9-]+	    ==> must start with string in the bracket [ ], must contains one or more (+)
+                    (			        ==> start of group #1
+                    \\.[_A-Za-z0-9-]+	==> follow by a dot "." and string in the bracket [ ], must contains one or more (+)
+                    )*			        ==> end of group #1, this group is optional (*)
+                    @			        ==> must contains a "@" symbol
+                    [A-Za-z0-9]+        ==> follow by string in the bracket [ ], must contains one or more (+)
+                    (			        ==> start of group #2 - first level TLD checking
+                    \\.[A-Za-z0-9]+     ==> follow by a dot "." and string in the bracket [ ], must contains one or more (+)
+                    )*		            ==> end of group #2, this group is optional (*)
+                    (			        ==> start of group #3 - second level TLD checking
+                    \\.[A-Za-z]{2,}     ==> follow by a dot "." and string in the bracket [ ], with minimum length of 2
+                    )			        ==> end of group #3
+                    $			        ==> end of the line
+                  -->
+                <input type="email" required minlength="7" maxlength="30" id="sle-email" class="column-right"
+                    name="sle_email" title="Enter valid e-mail, e.g. username@domain.com"
+                    oninvalid="this.setCustomValidity('The e-mail address you entered is invalid')"
+                    pattern="^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+                    placeholder="username@domain.com">
+            </div>
+            <div id="div-password" class="div-row">
+                <label class="column-left" for="sle-password">Your Password: </label>
+                <!--
+                    (?=.*\d)        ==> must contains one digit from 0-9
+                    (?=.*[a-z])		==> must contains one lowercase characters
+                    (?=.*[A-Z])		==> must contains one uppercase characters
+                    (?=.*[@#$%])	==> must contains one special symbols in the list "@#$%"
+                    .		        ==> match anything with previous condition checking
+                    {6,20}	        ==> length at least 6 characters and maximum of 20	
+                  -->
+                <input type="password" required id="sle-password" class="column-right" name="sle_password"
+                    pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})"
+                    title="invalid password, doesn't meat all the criterias" placeholder="Type your password">
+            </div>
+            <div id="div-re-password" class="div-row">
+                <label class="column-left" for="sle-retype-password">Re-Type Password: </label>
+                <!--
+                    (?=.*\d)        ==> must contains one digit from 0-9
+                    (?=.*[a-z])		==> must contains one lowercase characters
+                    (?=.*[A-Z])		==> must contains one uppercase characters
+                    (?=.*[@#$%])	==> must contains one special symbols in the list "@#$%"
+                    .		        ==> match anything with previous condition checking
+                    {6,20}	        ==> length at least 6 characters and maximum of 20	
+                  -->
+                <input type="password" required id="sle-retype-password" class="column-right" name="sle_retype_password"
+                    pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})"
+                    title="invalid password, doesn't meat all the criterias" placeholder="Retype your password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Social and Hobbies</legend>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Age: </label>
+                <input type="number" id="sle-age" class="column-right" name="sle_age" placeholder="Enter Age" min="1"
+                    max="120" title="An integer between 1 and 120 (in years)">
+            </div>
+            <div class="div-row">
+                <label class="column-left">Social Status: </label>
+
+                <input type="radio" id="rb-single" name="grpSocialStatus" checked>
+                <label for="rb-single" class="rb-label">Single</label>
+
+                <input type="radio" id="rb-married" name="grpSocialStatus">
+                <label for="rb-married" class="rb-label">Married</label>
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Hobbies: </label>
+
+                <div class="column-right">
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-sport" name="grpHobbies">
+                        <label for="cbx-sport" class="cbx-label">Sport</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-reading" name="grpHobbies">
+                        <label for="cbx-reading" class="cbx-label">Reading</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-programming" name="grpHobbies">
+                        <label for="cbx-programming" class="cbx-label">Programming</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-cooking" name="grpHobbies">
+                        <label for="cbx-cooking" class="cbx-label">Cooking</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-baking" name="grpHobbies">
+                        <label for="cbx-baking" class="cbx-label">Baking</label>
+                    </div>
+                    <div class="cbx-item">
+                        <input type="checkbox" id="cbx-cycling" name="grpHobbies">
+                        <label for="cbx-cycling" class="cbx-label">Cycling</label>
+                    </div>
+                </div>
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-age">Publisher ID: </label>
+                <input type="text" id="sle-publisher" class="column-right" name="sle_publisher" value="W24LCH" readonly>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Profile Information</legend>
+            <div class="div-row">
+                <label class="column-left" for="btn-imagePicker">Profile Photo: </label>
+                <div class="profie-picture">
+                    <input type="file" name="" id="btn-imagePicker" title="choose an image as your profile picture"
+                        accept="image/*" onchange="readURL(this);">
+                    <img id="img-profile" class="column-right" src="#" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="sle-fullname">Full Name: </label>
+                <input type="text" id="sle-fullname" class="column-right" name="sle_fullname" required
+                    placeholder="Enter your full name, first &amp; last names">
+            </div>
+            <div id="div-address" class="div-row">
+                <label class="column-left" for="address">Address: </label>
+                <input type="text" id="sle-address" class="column-right" name="sle_address"
+                    placeholder="Enter street, house#, city name and state">
+            </div>
+            <div class="div-row">
+                <label class="column-left" for="mle-aboutMe">Describe yourself: </label>
+                <textarea id="mle-aboutMe" class="column-right" name="mle_aboutMe" rows="7" cols="80"
+                    title="Write a few sentenses about yourself">
+                </textarea>
+            </div>
+        </fieldset>
+        <div class="buttons">
+            <button type="submit" class="my-button">Submit</button>
+            <button type="reset" class="my-button">Reset</button>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

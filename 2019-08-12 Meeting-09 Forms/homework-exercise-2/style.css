@@ -1,0 +1,52 @@
+#h1-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.frm-login {
+    width: 50%;
+}
+/* row */
+.div-row {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.column-left {
+    width: 40%;
+}
+
+.column-right {
+    width: 50%;
+}
+
+#sle-age, #sle-publisher {
+    width: 15%;
+}
+.rb-label, .cbx-label {
+    padding: 0 10px 0 0;
+}
+
+.cbx-item {
+    display: block;
+}
+
+#sle-publisher {
+    background-color: silver;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    margin: 20px;
+}
+.my-button {
+    height: 40px;
+    width: 20%;
+    font-size: 1.25em;
+}
+ 
