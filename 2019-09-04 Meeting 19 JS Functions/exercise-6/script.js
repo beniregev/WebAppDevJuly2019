@@ -10,7 +10,8 @@ function getElementsByClass(className) {
     var elements = document.getElementsByClassName(className);
     console.log(elements);
     for(var i=0;i<elements.length;i++){
-        if(elements[i].attributes.length==0) {
+        if(elements[i].id.length === 0) {
+            elements[i].id="bx--search-result" + i;
             // The element without any attribute
             console.log(elements[i]);
         }
